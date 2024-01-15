@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "752562118811",
+    "project_id": "bookbank-a75ea",
+    "storage_bucket": "bookbank-a75ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752562118811:android:4f755ddce596cd1c73663e",
+        "android_client_info": {
+          "package_name": "com.coffeecraze"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "752562118811-balvd53ttrq48odctt9pvbi2g1ednq8d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBy8COBHv4JP6-LEy5s5A1PED8rlMT_yAk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "752562118811-balvd53ttrq48odctt9pvbi2g1ednq8d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
