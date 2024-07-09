@@ -1,11 +1,11 @@
-import {StyleSheet, Text, View, Image, ScrollView} from 'react-native';
+import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
 import React from 'react';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Poster from '../../components/Poster/Poster';
 import Vendors from '../../components/Vendors/Vendors';
-import {TouchableOpacity} from 'react-native-gesture-handler';
-import {useNavigation} from '@react-navigation/native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import { useNavigation } from '@react-navigation/native';
 
 const Home = () => {
   const navigation = useNavigation();
@@ -14,33 +14,29 @@ const Home = () => {
     navigation.navigate('Books');
   };
   const handleVendords = () => {
-    navigation.navigate('Vendords');
+    navigation.navigate('VendorsList');
   };
 
   const handleAuthors = () => {
     navigation.navigate('Authors');
   };
-  const handleHome = () => {
-    navigation.navigate('Event');
-  };
-  const handleSearch = () => {
-    navigation.navigate('Serveys');
-  };
+
+
   const handleBell = () => {
     navigation.navigate('Questions');
   };
 
   return (
-    <ScrollView style={{flex: 1, backgroundColor: '#fff'}}>
+    <ScrollView style={{ flex: 1, backgroundColor: '#fff' }}>
       <View>
         <View style={styles.header}>
-          <TouchableOpacity onPress={handleSearch}>
-            <AntDesign name="search1" size={18} color={'#121212'} />
-          </TouchableOpacity>
 
-          <TouchableOpacity onPress={handleHome}>
-            <Text style={styles.home}>Home</Text>
-          </TouchableOpacity>
+          <AntDesign name="search1" size={18} color={'#121212'} />
+
+
+
+          <Text style={styles.home}>Home</Text>
+
 
           <TouchableOpacity onPress={handleBell}>
             <Ionicons
@@ -60,12 +56,12 @@ const Home = () => {
             backgroundColor: '#faf9fd',
             flexDirection: 'row',
           }}>
-          <View style={{flex: 1.3}}>
-            <View style={{margin: 24}}>
-              <Text style={{color: '#121212', fontWeight: '700', fontSize: 16}}>
+          <View style={{ flex: 1.3 }}>
+            <View style={{ margin: 24 }}>
+              <Text style={{ color: '#121212', fontWeight: '700', fontSize: 16 }}>
                 Special Offer
               </Text>
-              <Text style={{fontSize: 12, fontWeight: '400', fontSize: 13}}>
+              <Text style={{ fontSize: 12, fontWeight: '400', fontSize: 13 }}>
                 Discount 25%
               </Text>
               <View
@@ -88,7 +84,7 @@ const Home = () => {
             </View>
           </View>
 
-          <View style={{flex: 1}}>
+          <View style={{ flex: 1 }}>
             <Image
               source={require('../../assets/icons/Image.png')}
               style={styles.image}
@@ -102,11 +98,11 @@ const Home = () => {
             marginHorizontal: 24,
             marginTop: 30,
           }}>
-          <Text style={{color: '#121212', fontSize: 16, fontWeight: '700'}}>
+          <Text style={{ color: '#121212', fontSize: 16, fontWeight: '700' }}>
             Top of Week
           </Text>
           <TouchableOpacity onPress={handleBooks}>
-            <Text style={{color: '#54408C', fontSize: 12, fontWeight: '700'}}>
+            <Text style={{ color: '#54408C', fontSize: 12, fontWeight: '700' }}>
               See all
             </Text>
           </TouchableOpacity>
@@ -137,12 +133,12 @@ const Home = () => {
             flexDirection: 'row',
             justifyContent: 'space-between',
           }}>
-          <Text style={{color: '#121212', fontSize: 16, fontWeight: '700'}}>
+          <Text style={{ color: '#121212', fontSize: 16, fontWeight: '700' }}>
             Best Vendors
           </Text>
 
           <TouchableOpacity onPress={handleVendords}>
-            <Text style={{color: '#54408C', fontSize: 12, fontWeight: '700'}}>
+            <Text style={{ color: '#54408C', fontSize: 12, fontWeight: '700' }}>
               See all
             </Text>
           </TouchableOpacity>
@@ -164,11 +160,11 @@ const Home = () => {
             flexDirection: 'row',
             justifyContent: 'space-between',
           }}>
-          <Text style={{color: '#121212', fontSize: 16, fontWeight: '700'}}>
+          <Text style={{ color: '#121212', fontSize: 16, fontWeight: '700' }}>
             Authors
           </Text>
           <TouchableOpacity onPress={handleAuthors}>
-            <Text style={{color: '#54408C', fontSize: 12, fontWeight: '700'}}>
+            <Text style={{ color: '#54408C', fontSize: 12, fontWeight: '700' }}>
               See all
             </Text>
           </TouchableOpacity>
@@ -177,9 +173,9 @@ const Home = () => {
         <View style={styles.author}>
           <Image
             source={require('../../assets/icons/Image1.png')}
-            style={{height: 80, width: 80, borderRadius: 40}}
+            style={{ height: 80, width: 80, borderRadius: 40 }}
           />
-          <Text style={{color: '#121212', fontWeight: '500', fontSize: 12}}>
+          <Text style={{ color: '#121212', fontWeight: '500', fontSize: 12 }}>
             John Freeman
           </Text>
           <Text>Writer</Text>
