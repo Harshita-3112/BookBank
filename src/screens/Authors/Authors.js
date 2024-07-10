@@ -1,25 +1,32 @@
-import {StyleSheet, Text, View, Image} from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import React from 'react';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import FilterAuthors from '../../components/FilterAuthors/FilterAuthors';
-import {ScrollView} from 'react-native-gesture-handler';
+import { ScrollView } from 'react-native-gesture-handler';
 import AuthorDetail from '../../components/AuthorDetail/AuthorDetail';
+import { useNavigation } from '@react-navigation/native';
+import GoBackButton from '../../components/GoBackbutton/GoBackButton';
 
 const Authors = () => {
+
+  const navigation = useNavigation()
+
+
   return (
-    <ScrollView style={{flex: 1, backgroundColor: '#fff'}}>
+
+    <ScrollView style={{ flex: 1, backgroundColor: '#fff' }}>
       <View style={styles.header}>
-        <AntDesign name="arrowleft" size={22} color={'#121212'} />
-        <Text style={{color: '#121212', fontSize: 18, fontWeight: '700'}}>
+        <GoBackButton />
+        <Text style={{ color: '#121212', fontSize: 18, fontWeight: '700' }}>
           Authors
         </Text>
         <AntDesign name="search1" size={22} color={'#121212'} />
       </View>
-      <View style={{marginHorizontal: 24, marginTop: 20}}>
-        <Text style={{color: '#a6a6a6', fontSize: 15, fontWeight: '400'}}>
+      <View style={{ marginHorizontal: 24, marginTop: 20 }}>
+        <Text style={{ color: '#a6a6a6', fontSize: 15, fontWeight: '400' }}>
           Check the authors
         </Text>
-        <Text style={{color: '#54408C', fontSize: 19, fontWeight: '700'}}>
+        <Text style={{ color: '#54408C', fontSize: 19, fontWeight: '700' }}>
           Authors
         </Text>
       </View>

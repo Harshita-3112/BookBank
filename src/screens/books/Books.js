@@ -1,10 +1,17 @@
-import {StyleSheet, Text, View, Image} from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import React from 'react';
 import AntDesign from 'react-native-vector-icons/AntDesign';
+import { useNavigation } from '@react-navigation/native';
+import StarIconCard from '../../components/StarIconCard/StarIconCard';
+import GoBackButton from '../../components/GoBackbutton/GoBackButton';
 
-const Books = () => {
+const Books = ({ item, index }) => {
+  const navigation = useNavigation()
   return (
-    <View style={{flex: 1, backgroundColor: '#fff'}}>
+    <View style={{ flex: 1, backgroundColor: '#fff' }}>
+
+      <GoBackButton />
+
       <Image
         source={require('../../assets/icons/book1.png')}
         style={styles.image}
@@ -17,14 +24,14 @@ const Books = () => {
           justifyContent: 'space-between',
           flexDirection: 'row',
         }}>
-        <Text style={{color: '#121212', fontWeight: '700', fontSize: 18}}>
+        <Text style={{ color: '#121212', fontWeight: '700', fontSize: 18 }}>
           The Kite Runner
         </Text>
         <AntDesign name="heart" size={22} color={'#54408C'} />
       </View>
       <Image
         source={require('../../assets/icons/Frame3.png')}
-        style={{height: 60, width: 70, marginHorizontal: 24}}
+        style={{ height: 60, width: 70, marginHorizontal: 24 }}
       />
       <Text
         style={{
@@ -46,46 +53,7 @@ const Books = () => {
         }}>
         Review
       </Text>
-      <View style={{flexDirection: 'row', marginHorizontal: 24, marginTop: 4}}>
-        <AntDesign
-          name="star"
-          size={20}
-          color={'#F5BE00'}
-          style={{marginRight: 4}}
-        />
-        <AntDesign
-          name="star"
-          size={20}
-          color={'#F5BE00'}
-          style={{marginRight: 4}}
-        />
-        <AntDesign
-          name="star"
-          size={20}
-          color={'#F5BE00'}
-          style={{marginRight: 4}}
-        />
-        <AntDesign
-          name="star"
-          size={20}
-          color={'#F5BE00'}
-          style={{marginRight: 4}}
-        />
-        <AntDesign
-          name="star"
-          size={20}
-          color={'#121212'}
-          style={{marginRight: 4}}
-        />
-        <Text
-          style={{
-            color: '#121212',
-            fontWeight: '600',
-            fontSize: 13,
-          }}>
-          (4.0)
-        </Text>
-      </View>
+      <StarIconCard size={20} text={`(4.0)`} />
       <View
         style={{
           flexDirection: 'row',
@@ -103,7 +71,7 @@ const Books = () => {
             marginRight: 12,
           }}>
           <AntDesign name="minuscircle" size={20} color={'#E8E8E8'} />
-          <Text style={{color: '#121212', fontSize: 16, fontWeight: '500'}}>
+          <Text style={{ color: '#121212', fontSize: 16, fontWeight: '500' }}>
             1
           </Text>
           <AntDesign name="pluscircle" size={20} color={'#54408C'} />
@@ -134,7 +102,7 @@ const Books = () => {
             alignItems: 'center',
             justifyContent: 'center',
           }}>
-          <Text style={{color: '#fff', fontWeight: '700'}}>
+          <Text style={{ color: '#fff', fontWeight: '700' }}>
             Continue shopping
           </Text>
         </View>
@@ -147,7 +115,7 @@ const Books = () => {
             alignItems: 'center',
             justifyContent: 'center',
           }}>
-          <Text style={{color: '#54408C', fontWeight: '700', fontSize: 13}}>
+          <Text style={{ color: '#54408C', fontWeight: '700', fontSize: 13 }}>
             View cart
           </Text>
         </View>
@@ -166,4 +134,8 @@ const styles = StyleSheet.create({
     marginHorizontal: 60,
     marginTop: 41,
   },
+  icon: {
+    marginTop: 10,
+    marginHorizontal: 24
+  }
 });
