@@ -17,6 +17,8 @@ import Cart from '../screens/BottomTabNavigator/Cart/Cart';
 import Profile from '../screens/BottomTabNavigator/Profile/Profile';
 import Home from '../screens/Home/Home';
 import Books from '../screens/books/Books';
+import AuthorDetail from '../screens/AuthorDetail/AuthorDetail';
+
 
 
 const Stack = createStackNavigator();
@@ -45,7 +47,7 @@ const RootNavigator = () => {
         {user ? (
           <>
             {/* <Stack.Screen name="Splash" component={Splash} /> */}
-            <Stack.Screen name='BottomTabNavigator' component={BottomTabNavigator} />
+            <Stack.Screen name="BottomTabNavigator" component={BottomTabNavigator} />
             <Stack.Screen name="Home" component={Home} />
             <Stack.Screen name="Category" component={Category} />
             <Stack.Screen name="Cart" component={Cart} />
@@ -54,6 +56,7 @@ const RootNavigator = () => {
             <Stack.Screen name="Books" component={Books} />
             <Stack.Screen name="Authors" component={Authors} />
             <Stack.Screen name="FilterAuthors" component={FilterAuthors} />
+            <Stack.Screen name="AuthorDetail" component={AuthorDetail} />
 
 
             <Stack.Screen name="Questions" component={Questions} />

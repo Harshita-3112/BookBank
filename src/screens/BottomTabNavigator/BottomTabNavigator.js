@@ -9,7 +9,7 @@ import Home from '../Home/Home'
 const BottomTabNavigator = () => {
     const Tab = createBottomTabNavigator()
     return (
-        <Tab.Navigator>
+        <Tab.Navigator screenOptions={{ headerShown: false }}>
             <Tab.Screen name='Home' component={Home} />
             <Tab.Screen name='Category' component={Category} />
             <Tab.Screen name='Cart' component={Cart} />
