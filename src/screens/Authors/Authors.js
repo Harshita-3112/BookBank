@@ -46,7 +46,7 @@ const Authors = () => {
       photo: require('../../assets/icons/Image2.png'),
       name: 'Tess Gunty',
       title: 'Gunty was born and raised in South Bend, Indiana.She graduated from the University of Notre Dame with a Bachelor of Arts in English and from New York University.',
-      specialist: 'Writer',
+      specialist: 'Novelist',
       rating: 1,
       books: [
         {
@@ -76,7 +76,7 @@ const Authors = () => {
     {
       photo: require('../../assets/icons/Image3.png'),
       name: 'Richard Perston',
-      title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra dignissim ac ac ac. Nibh et sed ac, eget malesuada.',
+      title: 'Richard Preston is a writer for The New Yorker and bestselling author who has written books about infectious disease, bioterrorism, redwoods and other subjects, as well as fiction. ',
       specialist: 'Writer',
       rating: 1,
       books: [
@@ -107,15 +107,39 @@ const Authors = () => {
     {
       photo: require('../../assets/icons/Image4.png'),
       name: 'Ann Napolitano',
-      title: 'She is the author of the novels A Good Hard...',
+      title: 'Ann Napolitano is an American writer. She has written four successful novels.She taught fiction writing at Brooklyn College, New York University, and Gotham Writers Workshop.',
+      specialist: 'Writer',
+      rating: 1,
+      books: [
+        {
+          image: require('../../assets/icons/product4.png'),
+          name: 'The Da Vinci Code',
+          price: `$27.12`
+        },
+        {
+          image: require('../../assets/icons/product4.png'),
+          name: 'The Da Vinci Code',
+          price: `$27.12`
+        },
+        {
+          image: require('../../assets/icons/product4.png'),
+          name: 'The Da Vinci Code',
+          price: `$27.12`
+        },
+        {
+          image: require('../../assets/icons/product4.png'),
+          name: 'The Da Vinci Code',
+          price: `$27.12`
+        },
+      ]
     },
 
 
     {
       photo: require('../../assets/icons/Image5.png'),
       name: 'Abraham verghese',
-      title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra dignissim ac ac ac. Nibh et sed ac, eget malesuada. ',
-      specialist: 'Writer',
+      title: 'Abraham Verghese is an American physician and author. He is the Linda R. Meier and Joan F. Lane Provostial Professor of Medicine and Vice Chair for the Theory & Practice of Medicine at Stanford University Medical School.',
+      specialist: 'Author',
       rating: 1,
       books: [
         {
